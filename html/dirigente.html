@@ -1,161 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dirigente</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli%7CRoboto:400,300,500,700,900">
-    <link rel="stylesheet" type="text/css" href="../css/styles.css">
-    <link rel="icon" href="../img/Logo_ritagliato_45.png" type="image/png">
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Muli%7CRoboto:400,300,500,700,900"
+    />
+    <link rel="stylesheet" type="text/css" href="../css/styles.css" />
+    <link rel="icon" href="../img/Logo_ritagliato_45.png" type="image/png" />
+  </head>
 
-<body>
+  <body>
     <header>
-        <div class="header-container">
-            <div class="login-container">
-                <h1>Football Manager</h1>
-                <img src="../img/Logo_ritagliato_45.png" alt="logoSerieA" class="logo-image">
-            </div>
+      <div class="header-container">
+        <div class="login-container">
+          <h1>Football Manager</h1>
+          <img
+            src="../img/Logo_ritagliato_45.png"
+            alt="logoSerieA"
+            class="logo-image"
+          />
         </div>
+      </div>
 
-        <section id="welcome-message-dirigente">
-            <h1>Bevenuto nella sezione Dirigente</h1>
-        </section>
+      <section id="welcome-message-dirigente">
+        <h1>Bevenuto nella sezione Dirigente</h1>
+      </section>
 
-        <nav>
-            <ul>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="login.html">Login</a></li>
-                <li><a href="#">Registati</a></li>
-                <li><a href="contatto.html">Contattaci</a></li>
-            </ul>
-        </nav>
-
+      <nav>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="/html/login.html">Login</a></li>
+          <li><a href="#">Registati</a></li>
+          <li><a href="/html/contatto.html">Contattaci</a></li>
+        </ul>
+      </nav>
     </header>
 
     <main>
-        <div class="welcome-dirigente">
-            <!-- <section class="main-logo">
+      <div class="welcome-dirigente">
+        <!-- <section class="main-logo">
                 <img src="/img/logoSerieA.webp" alt="logoSerieA" class="main-logo-image">
                 <div class="main-logo-text">
                     <h3>COMPETIZIONE</h3>
                     <h1>SERIE A</h1>
                 </div>
             </section> -->
-            <section class="main-text-dirigente-container">
-                <h2>Benvenuto in Football Manager Online!</h2>
-                <p>Prendi il controllo della tua squadra preferita e portala alla vittoria!</p>
-            </section>
+        <section class="main-text-dirigente-container">
+          <h2>Benvenuto in Football Manager Online!</h2>
+          <p>
+            Prendi il controllo della tua squadra preferita e portala alla
+            vittoria!
+          </p>
+        </section>
+      </div>
+
+      <section class="dirigente-vendita-button-container">
+        <button id="In vendita" class="dirigente-vendita-button">
+          In vendita
+        </button>
+      </section>
+
+      <section class="dirigente-tabella-container">
+        <table class="dirigente-tabella">
+          <thead>
+            <tr>
+              <th>Id</th>
+              <th>Nome</th>
+              <th>Cognome</th>
+              <th>Età</th>
+              <th>Ruolo</th>
+              <th>Prezzo</th>
+              <th>Acquista</th>
+              <th>Rimuovi</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Gianluigi</td>
+              <td>Donnarumma</td>
+              <td>23</td>
+              <td>Portiere</td>
+              <td>20.000.000,00</td>
+              <td><button class="purchaseButton">Acquista</button></td>
+              <td><button class="removeButton">Rimuovi</button></td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Stefano</td>
+              <td>Pioli</td>
+              <td>56</td>
+              <td>Allenatore</td>
+              <td>0</td>
+              <td><button class="purchaseButton">Acquista</button></td>
+              <td><button class="removeButton">Rimuovi</button></td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Theo</td>
+              <td>Hernández</td>
+              <td>24</td>
+              <td>Difensore</td>
+              <td>40.000.000,00</td>
+              <td><button class="purchaseButton">Acquista</button></td>
+              <td><button class="removeButton">Rimuovi</button></td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>Franck</td>
+              <td>Kessié</td>
+              <td>24</td>
+              <td>Centrocampista</td>
+              <td>35.000.000,00</td>
+              <td><button class="purchaseButton">Acquista</button></td>
+              <td><button class="removeButton">Rimuovi</button></td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>Olivier</td>
+              <td>Giroud</td>
+              <td>35</td>
+              <td>Attaccante</td>
+              <td>2.000.000,00</td>
+              <td><button class="purchaseButton">Acquista</button></td>
+              <td><button class="removeButton">Rimuovi</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="carello-container">
+        <div class="carello-logo-container">
+          <div class="carello-logo">
+            <img src="/img/cartello.png" alt="cartello" />
+          </div>
+
+          <div class="carello-button-container">
+            <button id="cartButton" class="carello-button">
+              Nr. Calciatori: <span id="cartCount">0</span>
+            </button>
+          </div>
         </div>
 
-        <section class="dirigente-vendita-button-container">
-            <button id="In vendita" class="dirigente-vendita-button">In vendita</button>
-        </section>
+        <div class="carello-totale">
+          <h1>Budget: <span id="budget">100.000.000,00 EUR</span></h1>
+          <h1>Spesa Totale: <span id="spesaTotale">0,00 EUR</span></h1>
+        </div>
+      </section>
 
-        <section class="dirigente-tabella-container">
-            <table class="dirigente-tabella">
-                <thead>
-                    <tr>
-                        <th>Id</th>
-                        <th>Nome</th>
-                        <th>Cognome</th>
-                        <th>Età</th>
-                        <th>Ruolo</th>
-                        <th>Prezzo</th>
-                        <th>Acquista</th>
-                        <th>Rimuovi</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>Gianluigi</td>
-                        <td>Donnarumma</td>
-                        <td>23</td>
-                        <td>Portiere</td>
-                        <td>20.000.000,00</td>
-                        <td><button class="purchaseButton">Acquista</button></td>
-                        <td><button class="removeButton">Rimuovi</button></td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>Stefano</td>
-                        <td>Pioli</td>
-                        <td>56</td>
-                        <td>Allenatore</td>
-                        <td>0</td>
-                        <td><button class="purchaseButton">Acquista</button></td>
-                        <td><button class="removeButton">Rimuovi</button></td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td>Theo</td>
-                        <td>Hernández</td>
-                        <td>24</td>
-                        <td>Difensore</td>
-                        <td>40.000.000,00</td>
-                        <td><button class="purchaseButton">Acquista</button></td>
-                        <td><button class="removeButton">Rimuovi</button></td>
-                    </tr>
-                    <tr>
-                        <td>4</td>
-                        <td>Franck</td>
-                        <td>Kessié</td>
-                        <td>24</td>
-                        <td>Centrocampista</td>
-                        <td>35.000.000,00</td>
-                        <td><button class="purchaseButton">Acquista</button></td>
-                        <td><button class="removeButton">Rimuovi</button></td>
-                    </tr>
-                    <tr>
-                        <td>5</td>
-                        <td>Olivier</td>
-                        <td>Giroud</td>
-                        <td>35</td>
-                        <td>Attaccante</td>
-                        <td>2.000.000,00</td>
-                        <td><button class="purchaseButton">Acquista</button></td>
-                        <td><button class="removeButton">Rimuovi</button></td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
-
-        <section class="carello-container">
-            <div class="carello-logo-container">
-                <div class="carello-logo">
-                    <img src="../img/cartello.png" alt="cartello">
-                </div>
-
-                <div class="carello-button-container">
-                    <button id="cartButton" class="carello-button">Nr. Calciatori: <span
-                            id="cartCount">0</span></button>
-                </div>
-            </div>
-
-            <div class="carello-totale">
-                <h1>Budget: <span id="budget">100.000.000,00 EUR</span></h1>
-                <h1>Spesa Totale: <span id="spesaTotale">0,00 EUR</span></h1>
-            </div>
-        </section>
-
-        <button class="dirigente-reload-button" onclick="goBack()">Torna Indietro</button>
-        <button class="dirigente-reload-button" onclick="reload()">Ricarica</button>
-
+      <button class="dirigente-reload-button" onclick="goBack()">
+        Torna Indietro
+      </button>
+      <button class="dirigente-reload-button" onclick="reload()">
+        Ricarica
+      </button>
     </main>
 
     <footer class="footer-dirigente">
-        <p>© 2023 Football Manager Online. Tutti i diritti riservati.</p>
+      <p>© 2023 Football Manager Online. Tutti i diritti riservati.</p>
     </footer>
+  </body>
 
-
-</body>
-
-<script src="../js/TornaIndietro.js"></script>
-<script src="../js/Reload.js"></script>
-<script src="../js/carrello.js"></script>
-
+  <script src="../js/TornaIndietro.js"></script>
+  <script src="../js/Reload.js"></script>
+  <script src="../js/carrello.js"></script>
 </html>
