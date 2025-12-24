@@ -1,0 +1,723 @@
+/* ALL PAGES - HEADER - FOOTER */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  text-align: center;
+}
+ /* HEADER */
+header {
+  margin-top: 0;
+  background-color: rgb(0, 51, 153);
+  box-shadow: 7px -52px 10px rgba(60, 134, 225, 0.5) inset;
+  color: rgb(254, 244, 244);
+  padding-top: 5px;
+  text-align: center;
+}
+
+.header-container {
+  border-radius: 10px 8px 5px 30px;
+  padding-top: 15px;
+}
+
+.login-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding-left: 50px;
+}
+
+
+nav {
+  background-color: #003399;
+  text-align: center;
+  padding: 15px 0;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 0;
+  display: inline-block;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: transform 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+  color: rgb(143, 201, 235);
+  font-size: larger;
+  transform: scale(1.35);
+  box-shadow: 7px -5px 25px rgba(72, 231, 218, 0.9);
+  cursor: pointer;
+}
+
+/* WELCOME SECTION STYLES */
+
+.welcome-dirigente,
+.welcome-home,
+.header-formazione {
+  align-items: center;
+  color: #f7f4f4;
+  font-size: larger;
+  padding: 10px;
+  margin: 40px 50px;
+  background-color: rgb(23, 50, 112);
+  box-shadow: 0 -15px 20px rgba(0, 0, 0, 0.6);
+}
+
+.footer-home,
+.footer-contatto,
+.footer-allenatore,
+.footer-formazione,
+.footer-dirigente,
+.footer-login {
+  background-color: rgba(13, 60, 154, 0.9);
+  color: rgb(180, 213, 253);
+  text-align: center;
+  font-size: small;
+  font-weight: 700;
+  padding: 5px 0;
+  bottom: 0;
+  width: 100%;
+}
+
+/* HOME PAGE */
+
+/* Aggiungiamo stili per la sezione delle squadre */
+
+.team-container-allenatore {
+  text-align: center;
+  padding: 20px;
+}
+.team-title-container {
+  box-shadow: 7px -8px 15px rgba(198, 69, 69, 0.6);
+  background-color: rgba(186, 179, 179, 0.4);
+}
+
+
+.team-section h2 {
+  box-shadow: 5px -18px 10px rgba(60, 107, 208, 0.5) inset;
+  margin: 30px 25%;
+  padding: 10px;
+  border-radius: 0 0 10% 10%;
+  color: rgb(39, 77, 164);
+}
+
+.team-container,
+.team-container-allenatore {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 100px auto;
+}
+
+.team,
+.team-section-allenatore {
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #e0caca;
+  box-shadow: 7px -2px 15px rgba(7, 192, 192, 0.5);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.team:hover {
+  transform: scale(1.35);
+  box-shadow: 7px -2px 15px rgba(217, 98, 24, 0.5);
+}
+
+.team img {
+  width: 180px;
+  height: 210px;
+  border-radius: 8px;
+}
+
+.team p,
+.team-allenatore p {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+/* LOGIN PAGE */
+
+/* Stili per il form login */
+.loginpage-container {
+  width: 80%;
+  max-width: 500px;
+  margin: 100px auto;
+  background-color: #f1f1f1;
+  padding: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+  color: rgb(59, 54, 54);
+}
+
+.loginpage-container:hover {
+  transform: scale(1.02);
+}
+
+.loginpage-container h2 {
+  font-size: 24px;
+  color: rgb(43, 68, 128);
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#loginForm {
+  border: 2px solid #3195d7;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+#loginForm label {
+  display: block;
+  margin-bottom: 5px;
+  color: #1756e7;
+}
+
+#loginForm input[type="text"],
+#loginForm input[type="password"] {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #133b55;
+  border-radius: 5px;
+  transition: border-color 0.3s ease-in-out;
+  background-color: #fff;
+  color: #333;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.8) inset;
+}
+
+#loginForm input[type="text"]:focus,
+#loginForm input[type="password"]:focus {
+  border-color: #094e7d;
+}
+
+#loginForm input[type="submit"] {
+  background-color: #3498db;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease-in-out;
+  display: block;
+  margin: 0 auto;
+}
+
+#loginForm input[type="submit"]:hover {
+  background-color: #217dbb;
+}
+
+@media screen and (max-width: 600px) {
+  .loginpage-container {
+    width: 90%;
+  }
+}
+
+/* Caricamento barra login */
+
+#loadingBar {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(to right, #003399 50%, transparent 50%);
+  background-size: 200% 100%;
+  animation: loading 2s linear infinite;
+}
+
+@keyframes loading {
+  from {
+    background-position: 200% 0;
+  }
+
+  to {
+    background-position: -200% 0;
+  }
+}
+
+/* CONTACT PAGE */
+
+/* Stili per il form contatto */
+
+.contact-form {
+  width: 80%;
+  max-width: 500px;
+  margin: 100px auto;
+  background-color: #f1f1f1;
+  padding: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+  color: rgb(59, 54, 54);
+}
+
+.contact-form:hover {
+  transform: scale(1.02);
+}
+
+.contact-form h1 {
+  font-size: 24px;
+  color: rgb(43, 68, 128);
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.field-contact {
+  border: 2px solid #3195d7;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+legend {
+  color: #3498db;
+  font-weight: bold;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #1f3d82;
+}
+
+input[type="text"],
+input[type="email"],
+textarea,
+select {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #3498db;
+  border-radius: 5px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease-in-out;
+  background-color: #fff;
+  color: #333;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.8) inset;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus,
+select:focus {
+  border-color: #094e7d;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button[type="submit"] {
+  background-color: #3498db;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease-in-out;
+  display: block;
+  margin: 0 auto;
+}
+
+button[type="submit"]:hover {
+  background-color: #217dbb;
+}
+
+@media screen and (max-width: 600px) {
+  .contact-form {
+    width: 90%;
+  }
+}
+
+
+/* ALLENATORE PAGE */
+
+#welcome-message-allenatore,
+#welcome-message-dirigente {
+  border-radius: 8px 75px 22px 74px;
+  box-shadow: 0 18px 20px rgba(0, 0, 0, 0.8) inset;
+  box-shadow: 0 18px 20px rgba(203, 171, 171, 0.8);
+  padding: 15px;
+  margin: 43px 25%;
+  color: #f8e3e3;
+}
+
+.team-section-allenatore {
+  box-shadow: 7px -2px 18px rgba(30, 179, 248, 0.5);
+  margin: 10% 25%;
+  margin-top: 0;
+}
+
+
+.team-section-allenatore h2,
+.team-allenatore p {
+  box-shadow: 10px -2px 18px rgba(147, 236, 236, 0.5);
+  padding: 5px;
+  font-weight: 730;
+  border-radius: 4%;
+  margin: 3% 25%;
+  color: rgba(43, 98, 208, 0.8);
+  font-weight: 900;
+}
+
+.team-container-allenatore {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 10px auto;
+}
+
+.team-section-allenatore:hover,
+.allenatore-formazione:hover,
+.allenatore-simula:hover {
+  transform: scale(1.1);
+  box-shadow: 7px -2px 15px rgba(217, 98, 24, 0.5);
+  background-color: rgba(255, 242, 242, 0.3);
+}
+
+
+.allenatore-button:hover {
+  box-shadow: 7px -2px 15px rgba(217, 98, 24, 0.5);
+  background-color: rgba(255, 242, 242, 0.5);
+  color: rgba(214, 86, 22, 0.9);
+  font-size: 21px;
+}
+
+.team-allenatore img {
+  width: 360px;
+  height: 420px;
+  border-radius: 8px;
+}
+
+
+.allenatore-button-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 20%;
+}
+
+
+.allenatore-formazione,
+.allenatore-simula {
+  box-shadow: 7px -2px 15px rgba(7, 192, 192, 0.5);
+  width: 45%;
+  height: 80px;
+  margin: 10%;
+}
+
+.allenatore-button {
+  width: 100%;
+  height: 100%;
+  border: none;
+  margin: 0;
+  box-shadow: 7px -2px 15px rgba(7, 192, 192, 0.5);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+  color: rgba(43, 98, 208, 0.8);
+  font-weight: 900;
+
+}
+
+/*FORMAZIONE PAGE*/
+
+
+/* Stili di base per il menu a tendina */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Stile del pulsante del menu a tendina */
+.dropbtn {
+  background-color: #3498db;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.8) inset;
+  border-radius: 8px;
+  color: rgb(246, 240, 240);
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  
+}
+
+/* Stili per il contenitore delle opzioni */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #e2baba;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Stili per gli elementi dell'elenco delle opzioni */
+.dropdown-content a {
+  color: black;
+  background-color: #f9f9f9;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Cambia il colore degli elementi dell'elenco al passaggio del mouse */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Visualizza il menu a tendina quando si passa il mouse sul pulsante */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.formation-container {
+  width: 70%;
+  margin: 35px auto;
+  background-image: url("/img/terrenoFormazione.png");
+  padding-left: 80px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.2);
+  border: 8px solid rgba(16, 26, 49, 0.9);
+  transition: transform 0.3s ease-in-out;
+
+}
+
+.formation-container:hover {
+  transform: scale(1.02);
+
+}
+
+.formation-title {
+  font-size: 24px;
+  margin: 15px 25%;
+  color: #3969e1;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.7);
+}
+
+.formation-grid {
+  display: grid;
+  grid-template-columns: repeat(8, 0.8fr);
+  gap: 15px;
+  margin-right: 50% ;
+}
+
+.players-grid {
+  display: flex;
+  justify-content: space-around;
+}
+
+.formation-player {
+  width: 100px;
+  height: 100px;
+  background-color: #376ae1;
+  border: 2px solid #63d0a2;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  font-weight: bold;
+  color: #9f7e7e;
+  border-radius: 15%;
+}
+
+.players-container {
+  width: 80%;
+  margin: 20px auto;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.player {
+  width: 100px;
+  height: 100px;
+  background-color: #16316f;
+  border: 2px solid #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  margin: 10px;
+  cursor: pointer;
+  border-radius: 25%;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.7) inset;
+}
+
+
+
+/* Stile del bottone "Salva Modifiche" simile al menu a tendina */
+#salvaButton {
+  background-color: #2c4f9f;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.7) inset;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 8px;
+  margin: 3%;
+}
+
+
+.dirigente-tabella-container {
+  width: 80%;
+  max-width: 800px;
+  margin: 20px auto;
+  background-color: #f1f1f1;
+  padding: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+  color: rgb(59, 54, 54);
+}
+
+.dirigente-tabella-container:hover {
+  transform: scale(1.02);
+}
+
+.dirigente-tabella {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.dirigente-tabella th, .dirigente-tabella td {
+  border: 2px solid #3195d7;
+  padding: 10px;
+  text-align: center;
+}
+
+.dirigente-tabella th {
+  background-color: #3498db;
+  color: #fff;
+}
+
+.dirigente-tabella tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.dirigente-tabella tbody tr:hover {
+  background-color: #d3e0ea;
+}
+
+.purchaseButton, .removeButton {
+  background-color: #3498db;
+  color: #fff;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.purchaseButton:hover, .removeButton:hover {
+  background-color: #217dbb;
+}
+
+@media screen and (max-width: 600px) {
+  .dirigente-tabella-container {
+      width: 90%;
+  }
+}
+
+
+/* VENDITA BUTTON STYLES */
+
+.dirigente-vendita-button-container {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.dirigente-vendita-button,
+.dirigente-reload-button {
+  background-color: #3498db;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.dirigente-vendita-button:hover,
+.dirigente-reload-button:hover {
+  background-color: #217dbb;
+}
+
+/* CARRELLO */
+
+.carello-container {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  align-items: center;
+  background-color: #82b8db;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+}
+
+.carello-logo img {
+  width: 35px;
+  margin-right: 10px;
+}
+
+.carello-button-container {
+  margin-right: 10px;
+}
+
+.carello-button {
+  background-color: #f2e2e2;
+  color: #03416a;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.carello-button:hover {
+  background-color: #69b4e7;
+  color: #6b41ae;
+}
+
+.carello-logo-container {
+  display: flex;
+  flex-direction: row;
+}
+.carello-totale h1 {
+  font-size: 16px;
+  color: #eef4fc;
+  margin: 8px auto;
+  
+}

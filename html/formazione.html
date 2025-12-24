@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formazione</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli%7CRoboto:400,300,500,700,900">
+  <link rel="stylesheet" type="text/css" href="../css/styles.css">
+  <link rel="icon" type="image/x-icon" href="../img/Logo_ritagliato_45.png">
+</head>
+
+<body>
+
+  <header>
+    <div class="header-container">
+      <div class="login-container">
+        <h1>Football Manager</h1>
+
+        <img src="../img/Logo_ritagliato_45.png" alt="logoSerieA" class="logo-image">
+
+      </div>
+    </div>
+
+    <nav>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="#">Registati</a></li>
+        <li><a href="contatto.html">Contattaci</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="formazione-main">
+    <div class="header-formazione">
+      <h1>Formazione - Football Manager 2023</h1>
+      <div class="dropdown">
+        <button class="dropbtn">Formazioni</button>
+        <div class="dropdown-content">
+          <a href="#" value="option1">Link 1</a>
+          <a href="#" value="option2">link 2</a>
+          <a href="#" value="option3">Link 3</a>
+          <a href="#" value="option4">Link 4</a>
+          <a href="#" value="option5">Link 5</a>
+        </div>
+      </div>
+    </div>
+    <h2 class="formation-title">Inserisci la tua formazione</h2>
+
+    <div class="formation-container">
+
+      <div class="formation-grid" id="formationGrid">
+        <!-- Schermata formazione -->
+        <div class="formation-player portiere" id="player1" draggable="true" ondrop="drop(event)"
+          ondragover="allowDrop(event)"></div>
+        <div class="formation-player  option1" id="player2" draggable="true" ondrop="drop(event)"
+          ondragover="allowDrop(event)"></div>
+        <div class="formation-player semicentrale option1" id="player3" draggable="true" ondrop="drop(event)"
+          ondragover="allowDrop(event)"></div>
+        <div class="formation-player portiere " id="player4" draggable="true" ondrop="drop(event)"
+          ondragover="allowDrop(event)"></div>
+        <div class="formation-player semicentrale option1" id="player5" draggable="true" ondrop="drop(event)"
+          ondragover="allowDrop(event)"></div>
+        <div class="formation-player semicentrale" id="player6" draggable="true" ondrop="drop(event)"
+          ondragover="allowDrop(event)"></div>
+        <div class="formation-player centrale option1" id="player7" draggable="true" ondrop="drop(event)"
+          ondragover="allowDrop(event)"></div>
+        <div class="formation-player centrale " id="player8" draggable="true" ondrop="drop(event)"
+          ondragover="allowDrop(event)"></div>
+        <div class="formation-player centrale option1" id="player9" draggable="true" ondrop="drop(event)"
+          ondragover="allowDrop(event)"></div>
+        <div class="formation-player centrale" id="player10" draggable="true" ondrop="drop(event)"
+          ondragover="allowDrop(event)"></div>
+        <div class="formation-player centrale " id="player11" draggable="true" ondrop="drop(event)"
+          ondragover="allowDrop(event)"></div>
+        <div class="formation-player centrale option1" id="player12" draggable="true" ondrop="drop(event)"
+          ondragover="allowDrop(event)"></div>
+        <div class="formation-player laterale " id="player13" draggable="true" ondrop="drop(event)"
+          ondragover="allowDrop(event)"></div>
+        <div class="formation-player laterale" id="player14" draggable="true" ondrop="drop(event)"
+          ondragover="allowDrop(event)"></div>
+        <div class="formation-player laterale " id="player15" draggable="true" ondrop="drop(event)"
+          ondragover="allowDrop(event)"></div>
+        <div class="formation-player laterale option1" id="player16" draggable="true" ondrop="drop(event)"
+          ondragover="allowDrop(event)"></div>
+        <div class="formation-player laterale " id="player17" draggable="true" ondrop="drop(event)"
+          ondragover="allowDrop(event)"></div>
+        <div class="formation-player laterale option1" id="player18" draggable="true" ondrop="drop(event)"
+          ondragover="allowDrop(event)"></div>
+        <div class="formation-player laterale option1" id="player19" draggable="true" ondrop="drop(event)"
+          ondragover="allowDrop(event)"></div>
+        <div class="formation-player portiere" id="player20" draggable="true" ondrop="drop(event)"
+          ondragover="allowDrop(event)"></div>
+        <div class="formation-player portiere option1" id="player21" draggable="true" ondrop="drop(event)"
+          ondragover="allowDrop(event)"></div>
+        <div class="formation-player portiere" id="player22" draggable="true" ondrop="drop(event)"
+          ondragover="allowDrop(event)"></div>
+        <div class="formation-player portiere option1" id="player23" draggable="true" ondrop="drop(event)"
+          ondragover="allowDrop(event)"></div>
+        <div class="formation-player portiere" id="player24" draggable="true" ondrop="drop(event)"
+          ondragover="allowDrop(event)"></div>
+
+      </div>
+
+    </div>
+
+    <h2 class="formation-title">Lista dei giocatori</h2>
+
+    <div class="players-container">
+
+      <div class="players-grid" id="playersGrid">
+        <div class="player" draggable="true" id="playerA" ondragstart="drag(event)">A</div>
+        <div class="player" draggable="true" id="playerB" ondragstart="drag(event)">B</div>
+        <div class="player" draggable="true" id="playerC" ondragstart="drag(event)">C</div>
+        <div class="player" draggable="true" id="playerD" ondragstart="drag(event)">D</div>
+        <div class="player" draggable="true" id="playerE" ondragstart="drag(event)">E</div>
+        <div class="player" draggable="true" id="playerF" ondragstart="drag(event)">F</div>
+        <!-- Aggiungi altri giocatori alla lista -->
+      </div>
+    </div>
+
+    <button id="salvaButton" class="menu-button">Salva Modifiche</button>
+    <button class="dirigente-reload-button" onclick="goBack()">Torna Indietro</button>
+    <button class="dirigente-reload-button" onclick="reload()">Ricarica</button>
+
+  </main>
+  <footer class="footer-formazione">
+    <p>© 2023 Football Manager Online. Tutti i diritti riservati.</p>
+  </footer>
+</body>
+
+<script src="../js/app.js"></script>
+<script src="../js/TornaIndietro.js"></script>
+<script src="../js/Reload.js"></script>
+
+</html>

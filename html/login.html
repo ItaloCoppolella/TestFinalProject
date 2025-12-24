@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli%7CRoboto:400,300,500,700,900">
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+    <link rel="icon" href="../img/Logo_ritagliato_45.png" type="image/png">
+</head>
+
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.7.6/lottie.min.js"></script>
+    <header>
+        <div class="header-container">
+            <div class="login-container">
+                <h1>Football Manager</h1>
+                <img src="../img/Logo_ritagliato_45.png" alt="logoSerieA" class="logo-image">
+            </div>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="#">Registati</a></li>
+                <li><a href="contatto.html">Contattaci</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <main>
+        <div class="loginpage-container">
+            <h2>Login</h2>
+            <form id="loginForm" action="/login-dirigente" method="post">
+                <label for="username">Username:</label><br>
+                <input type="text" id="username" name="username"><br>
+                <label for="password">Password:</label><br>
+                <input type="password" id="password" name="password"><br>
+                <input type="submit" value="Login">
+            </form>
+        </div>
+
+        <button class="dirigente-reload-button" onclick="goBack()">Torna Indietro</button>
+        <button class="dirigente-reload-button" onclick="reload()">Ricarica</button>
+
+    </main>
+    <footer class="footer-login">
+        <p>© 2023 Football Manager Online. Tutti i diritti riservati.</p>
+    </footer>
+</body>
+<script src="../js/login.js"></script>
+<script src="../js/TornaIndietro.js"></script>
+<script src="../js/Reload.js"></script>
+
+</html>
